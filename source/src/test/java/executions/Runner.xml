@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="url" value="http://www.demo.guru99.com/V4/index.php"/>
+    <test name="New Customer">
+       <!-- <packages>
+            <package name="modules.NewCustomer"/>
+            <package name="modules.EditCustomer"/>
+            <package name="modules.PaymentFunction"/>
+            <package name="modules.General"/>
+        </packages>-->
+        <classes>
+            <class name="modules.PaymentFunction.Tc6"/>
+        </classes>
+    </test>
+</suite>
